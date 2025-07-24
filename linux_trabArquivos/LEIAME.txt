@@ -42,7 +42,7 @@ linux_trabalho/
 
 Você chegou a rodar `ordena.c`?
 
-O programa `./bin/buscaBinCEP` utiliza o arquivo **"a14"**, o qual é **gerado por ordenação externa (external merge sort)** no programa `ordena.c`.  
+O programa `./bin/buscaBinCEP` utiliza o arquivo **"novo.dat"**, o qual é **gerado por ordenação externa (external merge sort)** no programa `ordena.c`.  
 Portanto, **execute primeiro `ordena`** antes de usar `buscaBinCEP`, ou o arquivo necessário não estará disponível.
 
 ===============================================
