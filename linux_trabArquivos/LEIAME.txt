@@ -1,0 +1,58 @@
+===============================================
+            PROJETO DE PROGRAMAS EM C
+===============================================
+
+
+===============================================
+📁 ESTRUTURA DO PROJETO
+===============================================
+
+linux_trabalho/
+│
+├── data/            → Arquivos de entrada (ex: CSVs, binários, etc.)
+├── src/             → Códigos-fonte dos programas
+├── bin/             → Executáveis gerados (criado após a compilação)
+├── Makefile         → Script de compilação automatizada
+└── LEIAME.txt       → Este arquivo com instruções de uso
+
+===============================================
+⚙️ COMPILAÇÃO E EXECUÇÃO (LINUX)
+===============================================
+
+1. Acesse o diretório do projeto:
+   > cd linux_trabalho
+
+2. Compile todos os programas:
+   > make
+
+   Isso criará a pasta `bin/` (se necessário) e compilará todos os arquivos `.c` da pasta `src/`.
+
+3. Para executar um programa, use:
+   > make run PROG=nome_do_programa ARGS="argumentos"
+
+   Exemplo com argumento de CEP:
+   > make run PROG=buscaBinCEP ARGS="01001000"
+
+4. Para limpar os executáveis:
+   > make clean
+
+===============================================
+🔴 ATENÇÃO IMPORTANTE
+===============================================
+
+Você chegou a rodar `ordena.c`?
+
+O programa `./bin/buscaBinCEP` utiliza o arquivo **"a14"**, o qual é **gerado por ordenação externa (external merge sort)** no programa `ordena.c`.  
+Portanto, **execute primeiro `ordena`** antes de usar `buscaBinCEP`, ou o arquivo necessário não estará disponível.
+
+===============================================
+📌 OBSERVAÇÕES
+===============================================
+
+- Os caminhos usados nos programas são relativos (ex: `data/arquivo.dat`), então **execute os comandos sempre a partir da raiz do projeto `linux_trabalho/`**.
+- O Makefile funciona em praticamente todas as distribuições Linux com `gcc` e `make` instalados.
+- Use permissões adequadas caso o sistema bloqueie execução (ex: `chmod +x`).
+
+===============================================
+Obrigado pela atenção e bom uso!
+===============================================

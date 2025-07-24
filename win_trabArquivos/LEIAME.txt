@@ -1,0 +1,73 @@
+=========================================
+         PROJETO EM C - WINDOWS
+=========================================
+
+
+=========================================
+📁 ESTRUTURA DO PROJETO
+=========================================
+
+trabalho\
+│
+├── data\           → Arquivos de entrada necessários para execução
+├── src\            → Códigos-fonte dos programas em C
+├── bin\            → Executáveis gerados (criado automaticamente)
+│
+├── build.bat       → Script para compilar todos os arquivos .c da pasta src\
+├── run.bat         → Script com menu interativo para executar os programas
+
+=========================================
+⚙️ INSTRUÇÕES DE USO
+=========================================
+
+1. Abra o terminal (Prompt de Comando) no diretório `trabalho\`.
+
+2. Compile os programas com:
+   > build.bat
+
+   Isso criará a pasta `bin\` (caso não exista) e compilará todos os `.c` da pasta `src\`,
+   gerando os executáveis correspondentes.
+
+3. Execute o menu interativo com:
+   > run.bat
+
+   Você verá uma lista numerada de programas. Escolha um digitando o número correspondente.
+   Em seguida, forneça os argumentos necessários (por exemplo, um CEP para `buscaBinCEP`).
+
+4. O terminal permanecerá aberto após a execução, retornando ao menu principal para facilitar novos testes.
+
+5. Para sair do menu, escolha a opção `[0]`.
+
+=========================================
+🧠 OBSERVAÇÕES IMPORTANTES
+=========================================
+
+- Os programas usam caminhos relativos como `data\nome_do_arquivo.txt`.
+  Portanto, **execute sempre os scripts a partir do diretório `trabalho\`**.
+
+- Certifique-se de que todos os arquivos necessários (como arquivos `.txt`, `.csv`, etc.)
+  estejam dentro da pasta `data\`, conforme esperado por cada programa.
+
+=========================================
+✅ EXEMPLO DE USO
+=========================================
+
+1. Compilar:
+   > build.bat
+
+2. Executar:
+   > run.bat
+
+3. No menu:
+   > [1] buscaBinCEP
+
+4. Argumento:
+   > 01001000
+
+O programa `buscaBinCEP` será executado com o CEP fornecido.
+
+=========================================
+Obrigado pela atenção e bom uso!
+=========================================
+
+(sim eu usei o GPT pra fazer esse texto ¯\_(ツ)_/¯)
